@@ -1,6 +1,6 @@
 ## Projeto Clone site robots Bootstrap
 
->> Projeto desenvolvido para treinamento da habilidades HTML5 e CSS3
+>> Projeto desenvolvido para treinamento das habilidades HTML5 e CSS3
 
 :smile: Habilidades treinadas no projeto:
 
