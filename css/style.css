@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-graylight: #23354d;
+    --colors-white: #fff;
+    --font-primary: 'Open Sans', sans-serif;
+    --colors-darkgray: #A9A9A9;
+    --color-bar: #b9dfdf;
+    --colors-black: #1a1a1a;
+    --bg-gold: #aea16a;
+    --bg-graydark: #333333;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    width: 60%;
+    min-height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.menu-bar {
+    cursor: pointer;
+}
+.search input {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid var(--colors-darkgray);
+}
+.search input:focus {
+    outline: none;
+}
+
+/* MAIN */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "section-content";
+    flex: 1 0 auto; 
+}
+
+.future {
+    height: 725px;
+    background-image: url("../images/CoverStory_robots.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    color: var(--colors-white);
+    font: 66px var(--font-primary);
+}
+.content-future {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    
+}
+.bar {
+    width: 15px;
+    height: 150px;
+    background-color: var(--color-bar);
+    margin-top: 50px;
+    margin-left: 523px;
+}
+.content-future h1 {
+    text-align: right;
+    margin-right: 83px;    
+}
+.text-future {
+    font: 24px var(--font-primary);
+    text-align: right;
+    margin-right: 50px;
+}
+
+
+.human-robot {
+    width: 60%;
+    max-height: 700px;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+.content-humanRobot {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+.humanRobot-text {
+    flex: 1;
+    padding: 60px 20px 40px 0px;
+}
+.humanRobot-text h5 {
+    font: 20px var(--font-primary);
+}
+.humanRobot-text h2 {
+    font: 700 48px var(--font-primary);
+}
+.humanRobot-text p {
+    font: 20px var(--font-primary);
+    line-height: 40px;
+}
+.humanRobot-img {
+    min-height: 488px;
+    background-image: url("../images/robot001.jpg");
+    background-position: 13.79% 50%;
+    background-size: cover;
+    flex: 1;
+}
+
+
+.future-work {
+    width: 100%;
+    height: 500px;
+    display: flex;    
+}
+.text-futureWork-black {
+    width: 50%;
+    margin: 60px 0px 0px 380px;
+}
+.future-work-black {
+    background-color: var(--colors-black);
+    flex: 1;
+    color: var(--colors-white);
+}
+.future-work-black h3 {
+    font: 400 30px var(--font-primary);
+    margin-bottom: 20px;
+}
+.future-work-black p {
+    font: 300 18px var(--font-primary);
+}
+.future-work-blue {
+    background-color: var(--color-bar);
+    flex: 1;
+}
+.future-work-blue img {
+    width: 197px;
+    height: 195px;
+    position: absolute;
+}
+
+.content-img-futureWork {
+    width: 100%;      
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 220px;
+    flex-wrap: wrap;
+}
+
+.content-img-futureWork img {
+    width: 190px;
+    height: 180px;
+}
+
+.therobots {
+    width: 100%;
+    height: 700px;
+}
+.grid-therobots {
+    width: 60%;
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 80px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(350, auto);
+    grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item2 item3"
+        "item5 item5 item5"
+    ;
+}
+.item1 {
+    grid-area: item1;
+    font: 38px var(--font-primary);
+    background-color: var(--bg-gold);
+    color: var(--colors-white);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.item2 {
+    min-height: 273px;
+    grid-area: item2;
+    background-image: url("../images/img10.jpg");
+    background-size: cover;
+}
+.item3 {
+    grid-area: item3;
+    background-color: var(--color-bar);
+    font: 300 20px var(--font-primary);
+    padding: 80px 25px;
+    line-height: 35px;
+}
+.item4 {
+    grid-area: item4;
+    min-height: 273px;
+    background-image: url("../images/img9.jpg");
+    background-size: cover;
+}
+.item5 {
+    grid-area: item5;
+    padding: 40px;
+    text-align: center;
+}
+.item5 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 700 16px var(--font-primary);
+    color: var(--colors-black);
+    background-color: var(--color-bar);
+    padding: 15px 40px;
+}
+
+
+.bg-gray {
+    width: 100%;
+    height: 550px;
+    margin-top: 40px;
+    background-color: var(--bg-graydark);
+    flex-wrap: wrap;
+}
+.container-bgGray {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    padding: 100px 20px;
+    gap: 60px;   
+}
+.container-bgGray img {
+    width: 80px;
+    height:80px;
+    margin-bottom: 20px;
+}
+.container-bgGray h3 {
+    font: 30px var(--font-primary);
+    color: var(--bg-gold);
+    margin-bottom: 20px;
+}
+.container-bgGray p {
+    font: 300 20px var(--font-primary);
+    color: var(--colors-white);
+    line-height: 35px;
+    text-align: start;
+}
+
+
+
+.container-trends {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-trends h2 {
+    font: 700  48px var(--font-primary);
+    color: var(--bg-gold);
+    margin-top: 80px;
+}
+.container-trends p {
+    font: 300  20px var(--font-primary);
+    padding: 40px 150px;
+    margin-bottom: 50px;
+}
+
+.conteiner-imgTrends {
+    display: flex;
+    margin-bottom: 40px;
+}
+.img-trends1 {
+    background-image: url("../images/img11.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 33%;
+    height: 460px;
+}
+.img-trends2 {
+    background-image: url("../images/img12.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 33%;
+    height: 460px;
+}
+.img-trends3 {
+    background-image: url("../images/img13.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 33%;
+    height: 460px;
+}
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    min-height: 40px;
+    background-color: var(--bg-graylight);
+    color: var(--colors-white);
+    padding: 80px;
+    font: 16px var(--font-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social {
+    display: flex;
+    margin-top:30px;
+    gap: 15px;
+}
