@@ -11,6 +11,7 @@
     --font-primary: 'Open Sans', sans-serif;
     --colors-darkgray: #A9A9A9;
     --color-bar: #b9dfdf;
+    --colors-bluelight: #d7eded;
     --colors-black: #1a1a1a;
     --bg-gold: #aea16a;
     --bg-graydark: #333333;
@@ -343,6 +344,50 @@
     font: 600 30px var(--font-primary); 
     margin-top: 20px; 
     text-align: end; 
+}
+
+
+
+.artificial-intelligence {
+    width: 100%;
+    height: 1000px;
+    background-color: var(--color-bar);
+}
+.container-artificialInteligence {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    padding: 105px 0px;
+}
+.img-artificialIntelligence {
+    background-image: url("../images/img14.jpg");
+    background-size: cover;
+    background-position: 100% 50%;
+    width: 60%;
+    min-height: 792px;    
+}
+.text-artificialIntelligence {
+    width: 40%;
+    background-color: var(--colors-bluelight);
+    padding: 50px 30px;
+}
+.text-artificialIntelligence h2 {
+    font: 700 48px var(--font-primary);
+    padding-bottom: 40px;
+    line-height: 50px;
+}
+.text-artificialIntelligence p {
+    font: 300 20px var(--font-primary);
+    line-height: 32px;
+    padding-bottom: 60px;
+}
+.text-artificialIntelligence a {
+    font: 400 16px var(--font-primary);
+    text-decoration: none;
+    background-color: var(--color-bar);
+    padding: 12px 35px;
+    text-transform: uppercase;
+    color: var(--bg-black);
 }
 
 
