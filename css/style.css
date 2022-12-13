@@ -14,6 +14,7 @@
     --colors-black: #1a1a1a;
     --bg-gold: #aea16a;
     --bg-graydark: #333333;
+    --bg-black: #000;
 }
 
 .container {
@@ -21,6 +22,7 @@
     display: flex;
     flex-direction: column;
 }
+
 
 /* HEADER */
 .header {
@@ -302,6 +304,45 @@
     background-position: 50% 50%;
     width: 33%;
     height: 460px;
+}
+
+
+.ninety-nine {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+.container-ninetynine {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    padding: 110px 0px;
+}
+.container-ninetynine-bar {
+    width: 10%;
+    padding-right: 70px;
+}
+.ninetynine-bar {
+    width: 15px;
+    height: 100%;
+    background-color: var(--bg-gold);    
+}
+.ninetynine-content {    
+    color: var(--colors-white);    
+}
+.ninetynine-content img{
+    width: 104px;
+    height: 72px;
+    margin-bottom: 30px;
+}
+.ninetynine-content p {
+    font: 300 24px var(--font-primary);
+    line-height: 40px;
+}
+.ninetynine-content h5 {
+    font: 600 30px var(--font-primary); 
+    margin-top: 20px; 
+    text-align: end; 
 }
 
 
